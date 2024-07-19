@@ -1,0 +1,102 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 50rem;
+  height: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+.messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 70px); /* Adjust height to leave space for the form */
+}
+
+.message {
+  max-width: 80%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  word-wrap: break-word;
+}
+
+#you {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+}
+
+#other {
+  align-self: flex-start;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+}
+
+.message-content {
+  margin-bottom: 5px;
+}
+
+.message-meta {
+  font-size: 0.8em;
+  color: #999;
+  display: flex;
+  justify-content: space-between;
+}
+
+#time, #author {
+  margin: 0;
+}
+
+.message-form {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #e6e6e6;
+  background-color: #f9f9f9;
+}
+
+.message-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.message-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #075e54;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.message-form button:hover {
+  background-color: #128c7e;
+}
